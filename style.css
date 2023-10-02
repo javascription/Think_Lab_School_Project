@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
+/* Global Items */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  overflow-x: hidden;
+
+  min-height: 100vh;
+  background: url(futuristic-cityscape.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar */
+
+header {
+  position: relative;
+  padding: 2rem;
+}
+
+.navbar {
+  /*
+  display: flex;
+  padding: 1% 3%;
+  align-items: center;
+  position: relative; */
+  display: flex;
+  padding: 0% 3%;
+  height: 60px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+a { 
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .paths {
+  position: relative;
+  display: flex;
+  gap: 2.7rem;
+}
+
+.navbar .paths::after {
+  content: "";
+
+  background-color: black;
+  height: 3px;
+  width: 100%;
+  bottom: -1em;
+}
+
+.navbar #bars {
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .moon {
+  color: #e7e9e3;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-radius: 100px;
+  border: 0.125rem solid #fff;
+  padding: 0.03rem 0.6rem;
+  line-height: normal;
+} 
+
+/* Wrapper */
+
+.wrapper {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  top: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 13% 0;
+  font-size: 5rem;
+  backdrop-filter: blur(15px);
+}
+
+.wrapper-a a {
+  font-size: 2.5rem;
+}
+
+.icon-close {
+  display: none;
+  color: #e7e9e3;
+  font-size: 50px;
+  z-index: 1;
+
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 70%;
+  margin: auto;
+  color: #fff;
+
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  width: 80%;
+  color: #fff;
+  margin-top: 6.66%;
+  font-size: 1.2rem;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .navbar .paths,
+  .navbar .moon {
+    display: none;
+  }
+
+  .icon-close {
+    font-size: 3.3rem;
+    border: 4px solid #e7e9e3;
+    border-radius: 1rem;
+  }
+
+  .navbar #bars {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .navbar .logo a {
+    font-size: 2.5rem;
+  }
+}
+
+.credits {
+  font-size: 2.3rem;
+  width: 80%;
+  background-color: lineargradient(skyblue, lightgreen);
+}
