@@ -19,3 +19,15 @@ function closeWrapper() {
 
 
 
+function resizeWindow() {
+    wrapper.style.display = "none"
+    closeIcon.style.display = "none"
+    barsIcon.style.display = "flex"
+    const windowWidth = window.innerWidth;
+  
+      if (windowWidth >= 992) {
+          barsIcon.style.display = 'none';
+      } else {
+          barsIcon.style.display = 'flex';
+      }
+  }

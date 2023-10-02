@@ -25,7 +25,7 @@
         </header>
         <div class="wrapper">
           <div class="wrapper-a">
-            <li><a href="index.htm">Home</a></li>
+            <li><a href="/index.htm">Home</a></li>
             <li><a href = "/components/threats.htm">Threats</a></li>
             <li><a href = "/components/materials.htm">Materials</a></li>
             <li><a href = "/components/techniques.html">Techniques</a></li>
@@ -71,5 +71,40 @@ HPCs.
         <script src = "./main.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+          const wrapper = document.querySelector(".wrapper");
+const barsIcon = document.querySelector("#bars");
+const closeIcon = document.querySelector(".icon-close");
+
+
+
+function openWrapper() {
+  wrapper.style.display = "flex";
+  closeIcon.style.display = "flex";
+  barsIcon.style.display = "none";
+}
+
+function closeWrapper() {
+  wrapper.style.display = "none"
+  closeIcon.style.display = "none"
+  barsIcon.style.display = "flex"
+}
+
+
+
+
+function resizeWindow() {
+    wrapper.style.display = "none"
+    closeIcon.style.display = "none"
+    barsIcon.style.display = "flex"
+    const windowWidth = window.innerWidth;
+  
+      if (windowWidth >= 992) {
+          barsIcon.style.display = 'none';
+      } else {
+          barsIcon.style.display = 'flex';
+      }
+  }
+        </script>
     </body> 
 </html>

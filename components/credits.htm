@@ -25,7 +25,7 @@
         </header>
         <div class="wrapper">
           <div class="wrapper-a">
-            <li><a href="index.htm">Home</a></li>
+            <li><a href="/index.htm">Home</a></li>
             <li><a href = "/components/threats.htm">Threats</a></li>
             <li><a href = "/components/materials.htm">Materials</a></li>
             <li><a href = "/components/techniques.html">Techniques</a></li>
@@ -34,17 +34,101 @@
           </div>
         </div>
         <div class="intro">
-          <div class="credits">
-            <div style="color: aliceblue;">This Entire Website was made by Gauransh Saini of Class 9-L for The Think Lab Term 1 Group Project</div>
-            <div style="color: aliceblue">
-              Contact me through <a href="mailto:info@gauran.in"  style="color: #1eff00;">my email address</a>
-            </div>
-            <div><a href="https://github.com/javascription">Click To Visit My Github <i class="fa-brands fa-github"></i></a></div>
-          </div>
+        <table>
+          <tr class="hidden">
+              <td>hidden</td>
+              <td>hidden</td>
+          </tr>
+          <tr>
+              <td class="wrap"><a href="https://github.com/javascription/" target="_blank">Gauransh</a></td>
+              <td><a href="https://github.com/javascription/Think_Lab" target="_blank">Initialised, Programmed, Designed And Deployed The Complete Website </a></td>
+          </tr>
+          <tr class="hidden">
+              <td>hidden</td>
+              <td>hidden</td>
+          </tr>
+          <tr>
+              <td class="wrap">Anant</td>
+              <td>Content Writing</td>
+          </tr>
+          <tr class="hidden">
+              <td>hidden</td>
+              <td>hidden</td>
+          </tr>
+          <tr>
+            <td class="wrap">Rishav</td>
+            <td>Content Writing</td>
+        </tr>
+        <tr class="hidden">
+            <td>hidden</td>
+            <td>hidden</td>
+        </tr>
+        <tr>
+          <td class="wrap">Arnav</td>
+          <td>Content Writing</td>
+      </tr>
+      <tr class="hidden">
+          <td>hidden</td>
+          <td>hidden</td>
+      </tr>
+      <tr>
+        <td class="wrap">Divyaansh</td>
+        <td>Content Writing</td>
+    </tr>
+    <tr class="hidden">
+        <td>hidden</td>
+        <td>hidden</td>
+    </tr>
+    <tr>
+      <td class="wrap">Devashish</td>
+      <td>Content Writing</td>
+  </tr>
+  <tr class="hidden">
+      <td>hidden</td>
+      <td>hidden</td>
+  </tr>
+      </table>
+      <a href="https://github.com/javascription/Think_Lab" target="_blank" id="wsc">Website Source Code</a>
         </div>
+
         <noscript>You will need to enable Javascript to view this page</noscript>
         <script src = "./main.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+          const wrapper = document.querySelector(".wrapper");
+const barsIcon = document.querySelector("#bars");
+const closeIcon = document.querySelector(".icon-close");
+
+
+
+function openWrapper() {
+  wrapper.style.display = "flex";
+  closeIcon.style.display = "flex";
+  barsIcon.style.display = "none";
+}
+
+function closeWrapper() {
+  wrapper.style.display = "none"
+  closeIcon.style.display = "none"
+  barsIcon.style.display = "flex"
+}
+
+
+
+
+function resizeWindow() {
+    wrapper.style.display = "none"
+    closeIcon.style.display = "none"
+    barsIcon.style.display = "flex"
+    const windowWidth = window.innerWidth;
+  
+      if (windowWidth >= 992) {
+          barsIcon.style.display = 'none';
+      } else {
+          barsIcon.style.display = 'flex';
+      }
+  }
+        </script>
     </body> 
 </html>
